@@ -300,7 +300,6 @@
 
 .project-image-wrapper {
   aspect-ratio: 16 / 9;
-  border-bottom: var(--border-standard);
 }
 
 .project-image {
