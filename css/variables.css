@@ -1,0 +1,90 @@
+:root {
+  /* --- Colors (Soft Neo-Brutalist) --- */
+  --color-bg-primary: #e6e2d3;
+  --color-bg-secondary: #f4f1e1;
+  --color-text-primary: #1a1a1a;
+  --color-accent-primary: #c4e8c2;
+  --color-accent-hover: #a9d6a6;
+  --color-bg-surface: #ffffff;
+
+  /* --- Typography --- */
+  --font-family-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --font-family-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --heading-2: 2rem;
+  --heading-1: 3rem;
+
+  --line-height-normal: 1.5;
+  --line-height-tight: 1.2;
+  --tracking-wide: 0.0625rem;
+
+  /* --- Spacing (8px Grid) --- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 4rem;
+
+  /* --- Borders, Radius & Shadows --- */
+  --border-standard: 2px solid var(--color-text-primary);
+  --border-width: 2px;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+
+  --shadow-offset: 4px;
+  --shadow-offset-sm: 2px;
+  --shadow-offset-hover: 6px;
+  --lift-distance: -2px;
+  --press-distance: 4px;
+  --press-distance-sm: 2px;
+
+  --shadow-sm: var(--shadow-offset-sm) var(--shadow-offset-sm) 0px var(--color-text-primary);
+  --shadow-base: var(--shadow-offset) var(--shadow-offset) 0px var(--color-text-primary);
+  --shadow-hover: var(--shadow-offset-hover) var(--shadow-offset-hover) 0px var(--color-text-primary);
+
+    /* --- Transitions & Z-Index --- */
+  --transition-base: 0.2s ease-in-out;
+
+  --z-standard: 1;
+  --z-sticky: 100;
+
+  /* --- Layout & Containers --- */
+  --container-max-width: 75rem; /* 1200px */
+  --container-padding: var(--space-md);
+
+  /* --- Accessibility --- */
+  --focus-ring: 3px dashed var(--color-text-primary);
+  --focus-offset: 0.25rem;
+
+  --underline-weight: 0.1875rem;
+  --underline-offset: 0.25rem;
+
+  /* --- Code & Syntax --- */
+  --color-bg-code: #f0eee6;
+  --color-text-code: #d93d59;
+
+  /* --- Project Assets --- */
+  --project-preview-img: url('../assets/images/portfolio-preview-light.png');
+}
+
+/* --- Theme Overrides --- */
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #2d2d2d;
+  --color-text-primary: #ffffff;
+  --color-accent-primary: #9b1c1c;
+  --color-accent-hover: #7f1d1d;
+  --color-bg-surface: #2d2d2d;
+  --project-preview-img: url('../assets/images/portfolio-preview-dark.png');
+}

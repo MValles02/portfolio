@@ -1,0 +1,69 @@
+/* --- 1. Base Styles --- */
+html {
+  scroll-padding-top: 5rem; 
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-primary);
+  font-size: var(--text-base);
+  line-height: var(--line-height-normal);
+}
+
+::selection {
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-primary);
+}
+
+/* --- 2. Typography --- */
+h1, h2, h3, h4 {
+  line-height: var(--line-height-tight);
+  font-weight: 800;
+  margin-bottom: var(--space-md);
+}
+
+h1 { font-size: var(--heading-1); }
+h2 { font-size: var(--heading-2); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+
+p {
+  margin-bottom: var(--space-md);
+}
+
+/* --- 3. Global Links & Images --- */
+a {
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-primary);
+  text-decoration-thickness: var(--underline-weight);
+  text-underline-offset: var(--underline-offset);
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+a:hover {
+  background-color: var(--color-accent-primary);
+  text-decoration-color: var(--color-text-primary);
+}
+
+img {
+  border: var(--border-standard);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-base);
+}
+
+/* --- 4. Global Layout & Structural Tags --- */
+section {
+  padding-block: var(--space-xl);
+}
+
+/* --- 5. Accessibility & Focus States --- */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+*:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+  outline-color: var(--color-text-primary);
+}
