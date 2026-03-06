@@ -98,14 +98,6 @@
   display: inline-block;
 }
 
-/* --- Project Cards --- */
-
-.project-image {
-  content: var(--project-preview-img);
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 /* --- Theme Toggle --- */
 
