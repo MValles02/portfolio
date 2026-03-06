@@ -1,0 +1,42 @@
+# Mateo Valles - Portfolio
+
+A highly optimized, zero-framework developer portfolio designed with pure semantic HTML5, vanilla CSS variables, and strict neo-brutalist design principles. This project showcases modern frontend architecture focused on system stability, performance, and clean code.
+
+## Prerequisites and Installation
+
+This project is built using purely vanilla web technologies (`HTML5`, `CSS3`, `JavaScript ES6`) and requires zero build tools, bundlers, or configuration. There are no dependencies to install.
+
+- **Prerequisites**: Any modern web browser.
+- **Installation**: Simply clone this repository to your local machine:
+  ```bash
+  git clone https://github.com/MValles02/Portfolio.git
+  cd Portfolio
+  ```
+
+## How to Run Locally
+
+Because the project utilizes native ES6 JavaScript modules, it is best run through a local web server to avoid CORS restrictions on local `file://` protocols.
+
+You can use any minimal local server, such as:
+
+- **VS Code Live Server**: Open the project and click "Go Live".
+- **Node.js (serve)**: Execute `npx serve .` in the project root.
+- **Python**: Run `python -m http.server 8000` in the project root.
+
+Then, navigate to the provided localhost URL (e.g., `http://localhost:8000`) in your browser.
+
+## Architecture and Project Structure
+
+The portfolio is designed for raw speed, maximum accessibility, and straightforward maintainability without the overhead of external libraries or frameworks.
+
+- `index.html`: The singular entry point containing the semantic HTML structure.
+- `css/`: Styling is separated into logical, modular vanilla CSS files:
+  - `variables.css`: Global CSS custom properties acting as a design system and theme token registry.
+  - `reset.css`: A basic modern CSS reset for consistent cross-browser baseline rendering.
+  - `main.css`: Global typography rules and foundational layout constraints.
+  - `components.css`: Scoped styling for individual UI components (buttons, cards, headers).
+- `js/`: Native Vanilla JavaScript handling client-side interactivity (like dark mode toggling):
+  - `main.js`: The main application script, imported as an ES module.
+  - `modules/` and `utils/`: Subdirectories encouraging modular script architecture.
+- `assets/`: Directory for static assets, including project images and the downloadable CV.
+- `.gitignore`: Strictly configured to ignore `.agent/` and other non-essential files, keeping the repository pristine and optimized for direct deployment via platforms like Cloudflare Pages.
