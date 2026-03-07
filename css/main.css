@@ -1,7 +1,6 @@
 /* --- 1. Base Styles --- */
 html {
-  scroll-padding-top: 5rem; 
-  overflow-x: hidden;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -10,8 +9,6 @@ body {
   font-family: var(--font-family-primary);
   font-size: var(--text-base);
   line-height: var(--line-height-normal);
-  width: 100%;
-  overflow-x: hidden;
 }
 
 ::selection {
