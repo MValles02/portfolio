@@ -55,6 +55,14 @@
   display: flex;
   gap: var(--space-lg);
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: var(--space-sm);
+  }
 }
 
 .nav-link {
@@ -390,6 +398,7 @@
   flex-direction: row;
   align-items: flex-start;
   gap: var(--space-sm);
+  flex-wrap: wrap;
 }
 
 /* --- 6. Footer --- */
