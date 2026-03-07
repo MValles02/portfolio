@@ -40,3 +40,12 @@ The portfolio is designed for raw speed, maximum accessibility, and straightforw
   - `modules/` and `utils/`: Subdirectories encouraging modular script architecture.
 - `assets/`: Directory for static assets, including project images and the downloadable CV.
 - `.gitignore`: Strictly configured to ignore `.agent/` and other non-essential files, keeping the repository pristine and optimized for direct deployment via platforms like Cloudflare Pages.
+
+## Testing
+
+The project includes a lightweight testing suite for core logic (e.g., theme switching) that runs in a standard Node.js environment without external dependencies.
+
+To run the tests, execute:
+```bash
+node test/theme.test.mjs
+```
