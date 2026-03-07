@@ -3,12 +3,12 @@ const SELECTORS = {
     PORTFOLIO_PREVIEW: 'portfolio-preview'
 };
 
-const THEMES = {
+export const THEMES = {
     DARK: 'dark',
     LIGHT: 'light'
 };
 
-const STORAGE_KEYS = {
+export const STORAGE_KEYS = {
     THEME: 'theme'
 };
 
@@ -17,13 +17,13 @@ const ATTRS = {
     ARIA_LABEL: 'aria-label'
 };
 
-function getPreferredTheme() {
+export function getPreferredTheme() {
     const savedTheme = localStorage.getItem(STORAGE_KEYS.THEME);
     if (savedTheme) return savedTheme;
     return globalThis.matchMedia('(prefers-color-scheme: dark)').matches ? THEMES.DARK : THEMES.LIGHT;
 }
 
-function setTheme(theme) {
+export function setTheme(theme) {
     const htmlElement = document.documentElement;
     const themeToggle = document.getElementById(SELECTORS.THEME_TOGGLE);
     const portfolioPreview = document.getElementById(SELECTORS.PORTFOLIO_PREVIEW);
