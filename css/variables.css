@@ -52,7 +52,7 @@
   --shadow-base: var(--shadow-offset) var(--shadow-offset) 0px var(--color-text-primary);
   --shadow-hover: var(--shadow-offset-hover) var(--shadow-offset-hover) 0px var(--color-text-primary);
 
-    /* --- Transitions & Z-Index --- */
+  /* --- Transitions & Z-Index --- */
   --transition-base: 0.2s ease-in-out;
 
   --z-standard: 1;
