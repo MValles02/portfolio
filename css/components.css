@@ -195,7 +195,7 @@
   background-color: transparent;
   color: var(--color-text-primary);
   border: var(--border-standard);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-base);
 }
 
 .btn-ghost:hover,
@@ -203,7 +203,7 @@
   background-color: var(--color-text-primary);
   color: var(--color-bg-primary);
   transform: translate(var(--lift-distance), var(--lift-distance));
-  box-shadow: var(--shadow-base);
+  box-shadow: var(--shadow-hover);
 }
 
 .btn-ghost:active {
@@ -329,6 +329,9 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  border: none;
+  border-radius: 0;
+  border-bottom: var(--border-standard);
 }
 
 .project-content {
