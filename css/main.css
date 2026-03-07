@@ -48,9 +48,8 @@ a:hover {
 }
 
 img {
-  border: var(--border-standard);
+  border: var(--border-subtle);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-base);
 }
 
 /* --- 4. Global Layout & Structural Tags --- */

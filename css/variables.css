@@ -35,6 +35,7 @@
 
   /* --- Borders, Radius & Shadows --- */
   --border-standard: 2px solid var(--color-text-primary);
+  --border-subtle: 1px solid var(--color-text-primary);
   --border-width: 2px;
 
   --radius-sm: 0.25rem;
@@ -74,6 +75,11 @@
 
   /* --- Project Assets --- */
   --project-preview-img: url('../assets/images/portfolio-preview-light.png');
+
+  /* --- Breakpoints --- */
+  --bp-mobile: 480px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
 }
 
 /* --- Theme Overrides --- */
