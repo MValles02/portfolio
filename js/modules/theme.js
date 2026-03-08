@@ -51,8 +51,22 @@ export function initTheme() {
         return;
     }
 
-    const initialTheme = getPreferredTheme();
-    setTheme(initialTheme);
+    // Sync UI with the theme set in <head> to prevent FOUC
+    const initialTheme = document.documentElement.dataset.theme || getPreferredTheme();
+    
+    // Update toggle button accessibility label
+    if (themeToggle) {
+        const nextTheme = initialTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK;
+        themeToggle.setAttribute(ATTRS.ARIA_LABEL, `Switch to ${nextTheme} mode`);
+    }
+
+    // Update image assets for current theme
+    const portfolioPreview = document.getElementById(SELECTORS.PORTFOLIO_PREVIEW);
+    if (portfolioPreview) {
+        portfolioPreview.src = initialTheme === THEMES.DARK 
+            ? portfolioPreview.dataset.darkSrc 
+            : portfolioPreview.dataset.lightSrc;
+    }
 
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.dataset.theme;

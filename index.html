@@ -14,13 +14,19 @@
         <meta property="og:description" content="Portfolio of Mateo Valles, specializing in .NET, SQL Server, and modern frontend technologies.">
         <meta property="og:image" content="https://mateovalles.com/assets/images/portfolio-preview-light.png">
 
-        <link rel="icon" type="image/x-icon" href="assets/icons/favicon.png">
+        <link rel="icon" type="image/png" href="assets/icons/favicon.png">
         <title>Mateo Valles</title>
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/desktop-layout.css">
         <link rel="stylesheet" href="css/components.css">
+        <script>
+            (function() {
+                const theme = localStorage.getItem('theme') || (globalThis.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.dataset.theme = theme;
+            })();
+        </script>
     </head>
 
     <body id="top">
