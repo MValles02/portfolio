@@ -29,7 +29,7 @@ The portfolio is designed for raw speed, maximum accessibility, and straightforw
   - `components.css`: Scoped styling for individual UI components (buttons, cards, headers).
 - `js/`: Native Vanilla JavaScript handling client-side interactivity (like dark mode toggling):
   - `main.js`: The main application script, imported as an ES module.
-  - `modules/` and `utils/`: Subdirectories encouraging modular script architecture. The `theme.js` module now dynamically updates image assets based on the active theme.
+  - `modules/`: Subdirectory encouraging modular script architecture. The `theme.js` module now dynamically updates image assets based on the active theme.
 - `assets/`: Directory for static assets, including project images and the downloadable CV. Favicon link type updated to `image/png`.
 - `.gitignore`: Strictly configured to ignore `.agent/` and other non-essential files, keeping the repository pristine and optimized for direct deployment via platforms like Cloudflare Pages.
 
