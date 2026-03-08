@@ -17,14 +17,6 @@ This project is built using purely vanilla web technologies (`HTML5`, `CSS3`, `J
 
 Because the project utilizes native ES6 JavaScript modules, it is best run through a local web server to avoid CORS restrictions on local `file://` protocols.
 
-You can use any minimal local server, such as:
-
-- **VS Code Live Server**: Open the project and click "Go Live".
-- **Node.js (serve)**: Execute `npx serve .` in the project root.
-- **Python**: Run `python -m http.server 8000` in the project root.
-
-Then, navigate to the provided localhost URL (e.g., `http://localhost:8000`) in your browser.
-
 ## Architecture and Project Structure
 
 The portfolio is designed for raw speed, maximum accessibility, and straightforward maintainability without the overhead of external libraries or frameworks.
