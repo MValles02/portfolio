@@ -1,6 +1,7 @@
 /* --- 1. Base Styles --- */
 html {
   scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -65,4 +66,10 @@ section {
   outline: var(--focus-ring);
   outline-offset: var(--focus-offset);
   outline-color: var(--color-text-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
