@@ -59,8 +59,8 @@
   --z-sticky: 100;
 
   /* --- Layout & Containers --- */
-  --container-max-width: 75rem; /* 1200px */
-  --container-padding: var(--space-md);
+  --layout-desktop-max-width: 75rem; /* 1200px */
+  --layout-desktop-padding: var(--space-md);
 
   /* --- Accessibility --- */
   --focus-ring: 3px dashed var(--color-text-primary);
