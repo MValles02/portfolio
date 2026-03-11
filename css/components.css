@@ -52,6 +52,42 @@
   transform: translate(var(--press-distance), var(--press-distance));
 }
 
+/* --- Mobile Menu Toggle --- */
+.mobile-menu-toggle {
+  display: flex;
+  background: transparent;
+  border: var(--border-width) solid transparent;
+  padding: var(--space-xs) var(--space-sm);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-primary);
+  transition: background-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.mobile-menu-toggle:hover,
+.mobile-menu-toggle:focus-visible {
+  background-color: var(--color-accent-primary);
+  border: var(--border-standard);
+  box-shadow: var(--shadow-base);
+  outline: none;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .icon-menu {
+  display: none;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .icon-close {
+  display: block !important;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
+}
+
 /* --- Typography & Headings --- */
 
 .section-title {
