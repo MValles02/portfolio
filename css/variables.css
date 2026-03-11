@@ -17,9 +17,9 @@
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-lg: 1.125rem;
-  --text-xl: 1.5rem;
-  --heading-2: 2rem;
-  --heading-1: 3rem;
+  --text-xl: clamp(1.25rem, 3vw + 1rem, 1.5rem);
+  --heading-2: clamp(1.5rem, 4vw + 1rem, 2rem);
+  --heading-1: clamp(2rem, 5vw + 1rem, 3rem);
 
   --line-height-normal: 1.5;
   --line-height-tight: 1.2;
@@ -30,8 +30,8 @@
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
-  --space-xl: 3rem;
-  --space-xxl: 4rem;
+  --space-xl: clamp(2rem, 5vw + 1rem, 3rem);
+  --space-xxl: clamp(2.5rem, 6vw + 1rem, 4rem);
 
   /* --- Borders, Radius & Shadows --- */
   --border-standard: 2px solid var(--color-text-primary);
@@ -59,8 +59,8 @@
   --z-sticky: 100;
 
   /* --- Layout & Containers --- */
-  --layout-desktop-max-width: 75rem; /* 1200px */
-  --layout-desktop-padding: var(--space-md);
+  --layout-max-width: 75rem; /* 1200px */
+  --layout-padding: clamp(1rem, 5vw, 1.5rem);
 
   /* --- Accessibility --- */
   --focus-ring: 3px dashed var(--color-text-primary);
